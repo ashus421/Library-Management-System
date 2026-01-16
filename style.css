@@ -1,0 +1,105 @@
+/* --- 1. Main Background --- */
+body {
+    background-color: lightblue; 
+    font-family: sans-serif;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* --- 2. DASHBOARD STYLES (NEW) --- */
+
+/* Card 1: Total Books (Blue Theme) */
+#dashboard .col-md-4:nth-child(1) .card {
+    background-color: aliceblue;
+    border-left: 5px solid blue; /* Thick blue line on left */
+}
+
+/* Card 2: Total Students (Green Theme) */
+#dashboard .col-md-4:nth-child(2) .card {
+    background-color: honeydew;
+    border-left: 5px solid green; /* Thick green line on left */
+}
+
+/* Card 3: Books Issued (Red Theme) */
+#dashboard .col-md-4:nth-child(3) .card {
+    background-color: mistyrose;
+    border-left: 5px solid red; /* Thick red line on left */
+}
+
+/* Card General Animation */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px gray;
+    transition: transform 0.3s; /* Smooth animation */
+}
+
+/* Make card pop up when mouse hovers */
+.card:hover {
+    transform: translateY(-10px); 
+}
+
+/* Text Colors */
+#total-books { color: blue; }
+#total-students { color: green; }
+#books-issued { color: red; }
+
+
+/* --- 3. BOOKS LIST SECTION (NEW) --- */
+#books {
+    background-color: lavender; /* Soft purple background */
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- 4. STUDENTS LIST SECTION (NEW) --- */
+#students {
+    background-color: moccasin; /* Soft orange background */
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- 5. Manage Section --- */
+#manage {
+    background-color: lightgreen;
+    padding: 30px;
+    border-radius: 20px;
+}
+#manage h4 { color: darkgreen; }
+
+/* --- 6. Issue Book Section --- */
+#issue form {
+    background-color: lightyellow;
+    border: 2px solid gold;
+}
+
+/* --- 7. Table Styling --- */
+table { background-color: white; }
+thead { background-color: black; color: white; }
+
+/* --- 8. Buttons --- */
+.btn-primary { background-color: blue; border: none; }
+.btn-success { background-color: green; border: none; }
+
+.btn-return {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-return:hover { background-color: darkred; }
